@@ -32,6 +32,9 @@ icon = ["src/{{ cookiecutter.module_name }}/resources/icon"]
 sources = ["src/{{ cookiecutter.module_name }}"]
 test_sources = ["tests"]
 
+template = "{{ cookiecutter.template_source }}"
+template_branch = "{{ cookiecutter.template_branch }}"
+
 requires = [
     "kivy==2.3.1"
 ]
