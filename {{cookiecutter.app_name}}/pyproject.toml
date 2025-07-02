@@ -1,0 +1,56 @@
+[build-system]
+requires = ["briefcase"]
+
+[project]
+name = "{{ cookiecutter.app_name }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.description }}"
+authors = [
+    { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.author_email }}" }
+]
+dependencies = [
+    "kivy==2.3.1"
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "{{ cookiecutter.url }}"
+
+[tool.briefcase]
+project_name = "{{ cookiecutter.formal_name }}"
+bundle = "{{ cookiecutter.bundle }}"
+version = "{{ cookiecutter.version }}"
+url = "{{ cookiecutter.url }}"
+license = "{{ cookiecutter.license }}"
+author = "{{ cookiecutter.author }}"
+author_email = "{{ cookiecutter.author_email }}"
+
+[tool.briefcase.app.{{ cookiecutter.module_name }}]
+formal_name = "{{ cookiecutter.formal_name }}"
+description = "{{ cookiecutter.description }}"
+icon = ["src/{{ cookiecutter.module_name }}/resources/icon"]
+sources = ["src/{{ cookiecutter.module_name }}"]
+test_sources = ["tests"]
+
+requires = [
+    "kivy==2.3.1"
+]
+
+[tool.briefcase.app.{{ cookiecutter.module_name }}.android]
+build_backend = "briefcase_p4a_backend"
+
+requires = [
+    "kivy==2.3.1",
+    "android>=1.0.0",
+    "{{ cookiecutter.pyjnius_requirement }}"
+]
+
+android_sdk_version = "33"
+android_ndk_version = "25.2.9519653"
+android_min_sdk_version = "27"
+android_target_sdk_version = "36"
+android_activity = "org.kivy.android.PythonActivity"
+android_permissions = [
+    "android.permission.INTERNET"
+]
+build_gradle_dependencies = [] 

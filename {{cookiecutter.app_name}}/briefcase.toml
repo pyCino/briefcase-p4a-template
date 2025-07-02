@@ -1,0 +1,8 @@
+# Generated using Python {{ cookiecutter.python_version }}
+[briefcase]
+target_version = "0.3.24"
+
+[paths]
+app_path = "src"
+app_requirements_path = "requirements.txt"
+app_packages_path = "libs" 
