@@ -20,5 +20,7 @@
     "build_tools_version": "30.0.3",
     "p4a_bootstrap": "sdl2",
     "p4a_arch": "arm64-v8a",
-    "pyjnius_requirement": "git+https://github.com/kivy/pyjnius.git"
+    "pyjnius_requirement": "git+https://github.com/kivy/pyjnius.git",
+    "template_source": "https://github.com/pyCino/briefcase-p4a-template.git",
+    "template_branch": "main"
 } 
