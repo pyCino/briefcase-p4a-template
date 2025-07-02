@@ -13,7 +13,7 @@ Automatically used by the [Briefcase P4A Backend](https://github.com/pyCino/brie
 ### Automatic Usage
 
 ```bash
-pip install briefcase-p4a-backend
+pip install git+https://github.com/pyCino/briefcase-p4a-backend.git
 briefcase new
 # Select "Android" platform and "p4a" format
 briefcase build android p4a
