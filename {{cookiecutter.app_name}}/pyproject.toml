@@ -8,9 +8,7 @@ description = "{{ cookiecutter.description }}"
 authors = [
     { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.author_email }}" }
 ]
-dependencies = [
-    "kivy==2.3.1"
-]
+dependencies = []
 requires-python = ">=3.8"
 
 [project.urls]
@@ -35,9 +33,7 @@ test_sources = ["tests"]
 template = "{{ cookiecutter.template_source }}"
 template_branch = "{{ cookiecutter.template_branch }}"
 
-requires = [
-    "kivy==2.3.1"
-]
+requires = []
 
 [tool.briefcase.app.{{ cookiecutter.module_name }}.android]
 build_backend = "briefcase_p4a_backend"
