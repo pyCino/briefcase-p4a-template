@@ -39,8 +39,6 @@ requires = []
 build_backend = "briefcase_p4a_backend"
 
 requires = [
-    "kivy==2.3.1",
-    "android>=1.0.0",
     "{{ cookiecutter.pyjnius_requirement }}"
 ]
 
@@ -48,7 +46,6 @@ android_sdk_version = "33"
 android_ndk_version = "25.2.9519653"
 android_min_sdk_version = "27"
 android_target_sdk_version = "36"
-android_activity = "org.kivy.android.PythonActivity"
 android_permissions = [
     "android.permission.INTERNET"
 ]
